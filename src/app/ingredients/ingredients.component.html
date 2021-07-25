@@ -1,0 +1,29 @@
+<div class="container-dash">
+  <div class="row">
+    <div class="col-sm-12">
+      <input id="search" (keyup)="search()" placeholder="Search">
+    </div>
+    <div class="categories col-sm-10">
+      <div *ngFor="let art of dados" class="category {{art.class}}" title="{{art.name}} - {{art.description}}">
+        <a href="/?ingredient={{art.name}}">
+          <h2>{{art.name}}</h2>
+        </a>
+        <button class="btn-ing" (click)="showDescription(art.name, art.description)">
+          <fa-icon [icon]="faInfo" class="fa-sm"></fa-icon>
+        </button>
+      </div>
+    </div>
+    <div class="areas col-sm-2">
+      <h4>Areas</h4>
+      <a *ngFor="let a of areas" href="/?area={{a}}" title="{{a}}">{{a}}</a>
+    </div>
+  </div>
+</div>
+
+<div class="modal">
+  <div class="internal-modal">
+    <span class="modal-close" (click)="closeModdal()">x</span>
+    <h2>{{name}}</h2>
+    <p>{{description}}</p>
+  </div>
+</div>

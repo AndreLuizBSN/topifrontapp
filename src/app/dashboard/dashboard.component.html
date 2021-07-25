@@ -1,0 +1,24 @@
+<div class="container-dash">
+  <div class="row">
+    <div class="col-sm-12 search-div">
+      <input id="search" placeholder="Search">
+      <button id="btn-search" (click)="search()" >Search</button>
+    </div>
+    <div class="slide-posts col-sm-10">
+      <div id="nothing-here">
+        <h2>Nothing here!</h2>
+        <img src="./assets/files/img/hungry.gif" alt="">
+      </div>
+      <a *ngFor="let art of dados" class="post" [ngStyle]="{'background-image': 'url('+art.thumb+')'}" href="/meal/{{art.id}}" title="{{art.name}}">
+        <div class="content">
+          <h2>{{art.name}}</h2>
+          <span *ngIf="art.area">{{art.area}} | {{art.categoy}}</span>
+        </div>
+      </a>
+    </div>
+    <div class="areas col-sm-2">
+      <h4>Areas</h4>
+      <a *ngFor="let a of areas" href="/?area={{a}}" title="{{a}}">{{a}}</a>
+    </div>
+  </div>
+</div>

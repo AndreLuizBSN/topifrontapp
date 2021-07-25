@@ -1,0 +1,25 @@
+.menu-bar{
+    display: inline-block;
+    width: 150px;
+    position: absolute;
+    background: #d8d8d8;
+    border-right: 1px solid #cac2c2;
+    border-radius: 2px;
+}
+
+.menu-bar .link {
+    display: block;
+    border-bottom: 1px solid #cac2c2;
+    padding: 5px;
+}
+
+.menu-bar .link fa-icon, .menu-bar .link > span{
+    text-align: center;
+}
+
+.menu-bar .link fa-icon{
+    margin-right: 15px;
+}
+.menu-bar .link > span{
+    font-size: 13px;
+}

@@ -1,0 +1,153 @@
+.content-base {
+  margin: 15px 30px;
+}
+
+.content-base .content {
+  width: 90%;
+  margin-left: 5%;
+  padding: 10px;
+  box-shadow: 0 0 10px;
+  border-radius: 3px;
+  margin-bottom: 100px;
+}
+
+.content-base .content h1 {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.content-base .content h4 {
+  border-top: 1px solid rgba(255,255,255,.1);
+  padding-top: 15px;
+}
+.content .header .title{
+  border-bottom: 1px solid rgba(255,255,255,.1);
+  margin: 0 0 15px 0;
+}
+.content .header .title span{
+  float: right;
+  margin-top: 15px;
+}
+
+.content-base .content p {
+  margin: 15px 0;
+  text-align: justify;
+  font-size: 20px;
+}
+.content-base .content img {
+  box-shadow: 0 0 5px;
+}
+
+.content-img {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.content-youtube{
+  text-align: center;
+}
+
+.content-youtube iframe{
+  width: 560px;
+  height: 315px;
+}
+
+.areas {
+  border: 1px solid rgba(255,255,255,.1);
+  margin-top: 5px;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.areas h4 {
+  border-bottom: 1px solid rgba(255,255,255,.1);
+  padding-bottom: 10px;
+}
+
+.areas a{
+  display: block;
+  font-size: 16px;
+  color: #909090;
+}
+
+.slide-posts .post .content{
+  background: rgba(0,0,0,.8);
+}
+
+.slide-posts {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.slide-posts .post {
+  width: 250px;
+  height: 185px;
+  display: flex;
+  align-items: flex-end;
+  margin: 7px;
+  border-radius: 2px;
+  box-shadow: 0 0 3px 0.01pc #fff3;
+  background-size: cover;
+}
+
+.slide-posts .post  .content {
+  width: 100%;
+  margin-left: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.slide-posts .post  .content h2 {
+  font-weight: bold;
+}
+
+.block-same {
+  text-align: center;
+  border-bottom: 1px solid rgba(255,255,255,.1);
+  padding-bottom: 10px;
+}
+
+.content-ingredients{text-align: center;}
+.content-ingredients .content-item-ingredients{
+  display: inline-block;
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid rgba(255,255,255,.1);
+  border-radius: 3px;
+  background: rgba(255,255,255,.1);
+  color: #fff;
+}
+.content-ingredients .content-item-ingredients:hover {background: rgba(255,255,255,.2);}
+.content-ingredients .content-item-ingredients a{
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  .areas{text-align: center;}
+  .areas a{
+    padding: 15px;
+    display: inline-block;
+  }
+  .content .header .title span{
+    float: left;
+    margin-bottom: 15px;
+    margin-top: 0px;
+  }
+
+  .content-youtube iframe{
+    width: 350px;
+    height: 197px;
+  }
+}
+
+@media (max-width: 430px) {
+  .content-youtube iframe{
+    width: 100%;
+    height: 197px;
+  }
+}
+
+@media (max-width: 800px) {
+  .content-base .content img {width: 100%;}
+}

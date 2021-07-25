@@ -1,0 +1,74 @@
+<div class="content-base">
+  <div class="row">
+    <div class="col-sm-10">
+      <div class="content">
+        <div class="header">
+          <div class="title row">
+            <div class="col-sm-8">
+              <h1 title="{{dado.name}}">{{dado.name}}</h1>
+            </div>
+            <div class="col-sm-4">
+              <span><a href="/?area={{dado.area}}" title="{{dado.area}}">{{dado.area}}</a> | <a href="/?categoy={{dado.categoy}}" title="{{dado.categoy}}">{{dado.categoy}}</a></span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-3">
+              <div class="content-item content-img">
+                <img src="{{dado.thumb}}" alt="">
+              </div>
+            </div>
+            <div class="col-sm-9">
+              <p class="instructions" title="{{dado.instructions}}">{{dado.instructions}}</p>
+            </div>
+          </div>
+        </div>
+
+        <h4 *ngIf="dado.ingredients.length!=0" title="Ingredients">Ingredients</h4>
+        <div class="content-item" *ngFor="let item of dado.ingredients">
+          <ul>
+            <li title="{{item.ingredient}} - {{item.measure}}">{{item.ingredient}} - {{item.measure}}</li>
+          </ul>
+        </div>
+        <h4 *ngIf="dado.youtube"></h4>
+        <div class="content-item content-youtube" *ngIf="dado.youtube">
+          <iframe src="https://www.youtube.com/embed/mulqW-J3Yy4"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="content-ingredients">
+        <h3 class="block-same" *ngIf="dado.ingredients.length!=0">See other options that use the same ingredients</h3>
+        <div class="content-item-ingredients" *ngFor="let item of dado.ingredients">
+          <a href="/?ingredient={{item.ingredient}}">{{item.ingredient}}</a>
+        </div>
+      </div>
+      <div >
+        <h3 class="block-same" *ngIf="dadosCategories.length!=0">Same Category</h3>
+        <div class="slide-posts">
+          <a *ngFor="let art of dadosCategories" class="post" [ngStyle]="{'background-image': 'url('+art.thumb+')'}" href="/meal/{{art.id}}" title="{{art.name}}">
+            <div class="content">
+              <h2>{{art.name}}</h2>
+              <span *ngIf="art.area">{{art.area}} | {{art.categoy}}</span>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div >
+        <h3 class="block-same" *ngIf="dadosArea.length!=0">Same Area</h3>
+        <div class="slide-posts">
+          <a *ngFor="let art of dadosArea" class="post" [ngStyle]="{'background-image': 'url('+art.thumb+')'}" href="/meal/{{art.id}}" title="{{art.name}}">
+            <div class="content">
+              <h2>{{art.name}}</h2>
+              <span *ngIf="art.area">{{art.area}} | {{art.categoy}}</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="areas col-sm-2">
+      <h4>Areas</h4>
+      <a *ngFor="let a of areas" href="/?area={{a}}">{{a}}</a>
+    </div>
+  </div>
+</div>

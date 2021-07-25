@@ -1,0 +1,10 @@
+<IfModule mod_rewrite.c>
+  Options Indexes FollowSymLinks
+  RewriteEngine On
+  RewriteRule ^index\.html$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule . /index.html [L]
+  RewriteCond %{HTTP_HOST} ^lojavirtual.specificjeans.com.br$
+  RewriteRule ^(.*) http://specific.e-store.kinghost.net/$1 [P]
+</IfModule>

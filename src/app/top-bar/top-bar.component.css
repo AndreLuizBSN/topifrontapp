@@ -1,0 +1,83 @@
+.logo {
+  width: 28px;
+}
+
+.header-top {
+  padding: 5px 0;
+}
+
+.menu-itens, .menu-itens-letter {
+  background: #101010;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+  text-align: center;
+}
+.menu-itens-letter {
+  height: 30px;
+  overflow-x: auto;
+}
+.menu-itens a, .menu-itens-letter a, .menu-itens .menu-itens-mobile {
+  color: #fff;
+  padding: 0 18px;
+  display: inline-block;
+  font-size: 20px;
+}
+.menu-itens .menu-itens-mobile {display: none;}
+
+.menu-itens .itens, .menu-itens-letter .itens {display: inline-block;}
+
+.menu-itens a:hover, .menu-itens a.menu-selecionado{
+  text-decoration: none;
+  background: #333;
+}
+
+.all-categories {
+  background: #383838;
+}
+
+.btn-suggestion{
+  background: rgba(255,255,255,.1);
+  float: right;
+  right: 10px;
+  border: 1px solid rgba(255,255,255,.1);
+  border-radius: 3px;
+  font-size: 17px;
+  position: absolute;
+}
+
+.btn-suggestion:active, .btn-suggestion:hover {
+  background: rgba(255,255,255,.2);
+}
+
+@media (max-width: 800px) {
+
+  .header-top{
+    text-align: center;
+    border-bottom: 1px solid #333;
+  }
+
+  .menu-itens {
+    width: 150px;
+    border: none;
+  }
+  .menu-itens .menu-itens-mobile {
+    display: block;
+    position: fixed;
+    top: 0;
+    text-align: left;
+    width: 150px;
+  }
+
+  .menu-itens .itens {
+    display: none;
+    z-index: 9;
+    background: #101010;
+    position: absolute;
+    border: 1px solid;
+    border-radius: 0px 0 5px 0px;
+  }
+
+  .menu-itens .itens a {
+    width: 100%;
+  }
+}

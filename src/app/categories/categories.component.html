@@ -1,0 +1,15 @@
+<div class="container-dash">
+  <div class="row">
+    <div class="categories col-sm-10">
+      <a *ngFor="let art of dados" class="category" href="/?category={{art.name}}" title="{{art.name}} - {{art.description}}">
+        <h2>{{art.name}}</h2>
+        <img src="{{art.thumb}}" alt="">
+        <p>{{art.description}}</p>
+      </a>
+    </div>
+    <div class="areas col-sm-2">
+      <h4>Areas</h4>
+      <a *ngFor="let a of areas" href="/?area={{a}}" title="{{a}}">{{a}}</a>
+    </div>
+  </div>
+</div>

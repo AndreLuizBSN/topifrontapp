@@ -1,0 +1,23 @@
+
+.container {
+    display: block;/*
+    max-width: 1170px;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin: 0px auto;*/
+}
+
+.container>* {
+    width: 100%;
+    display: block;
+}
+
+.app-gerenciamento {
+  margin-top: 10px !important;
+}
+
+/*
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+*/

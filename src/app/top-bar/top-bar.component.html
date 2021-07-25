@@ -1,0 +1,48 @@
+<div class="header-top">
+  <a href="/" title="Home page">
+    <img src="./assets/files/img/logo.png" alt="" class="logo">
+  </a>
+  <button class="btn-suggestion" (click)="suggestion()" title="Suggestion of meal">Suggestion?</button>
+</div>
+<div class="header-bottom">
+  <nav class="menu-itens">
+    <div class="menu-itens-mobile" (click)="showHideMenu()">
+      <img src="./assets/files/icon/menu.png" alt="" width=30px>
+    </div>
+    <div class="itens">
+      <a *ngFor="let cat of categories" href="/?category={{cat}}" id="{{cat}}" title="{{cat}}">{{cat}}</a>
+      <a href="/categories" class="all-categories" title="See all categories">All Categories</a>
+      <a href="/ingredients" title="See all ingredients">All Ingredients</a>
+    </div>
+  </nav>
+  <nav class="menu-itens-letter">
+    <div class="itens">
+      <a href="/?letter=a" title="Letter A">A</a>
+      <a href="/?letter=b" title="Letter B">B</a>
+      <a href="/?letter=c" title="Letter C">C</a>
+      <a href="/?letter=d" title="Letter D">D</a>
+      <a href="/?letter=e" title="Letter E">E</a>
+      <a href="/?letter=f" title="Letter F">F</a>
+      <a href="/?letter=g" title="Letter G">G</a>
+      <a href="/?letter=h" title="Letter H">H</a>
+      <a href="/?letter=i" title="Letter I">I</a>
+      <a href="/?letter=j" title="Letter J">J</a>
+      <a href="/?letter=k" title="Letter K">K</a>
+      <a href="/?letter=l" title="Letter L">L</a>
+      <a href="/?letter=m" title="Letter M">M</a>
+      <a href="/?letter=n" title="Letter N">N</a>
+      <a href="/?letter=o" title="Letter O">O</a>
+      <a href="/?letter=p" title="Letter P">P</a>
+      <a href="/?letter=q" title="Letter Q">Q</a>
+      <a href="/?letter=r" title="Letter R">R</a>
+      <a href="/?letter=s" title="Letter S">S</a>
+      <a href="/?letter=t" title="Letter T">T</a>
+      <a href="/?letter=u" title="Letter U">U</a>
+      <a href="/?letter=v" title="Letter V">V</a>
+      <a href="/?letter=w" title="Letter W">W</a>
+      <a href="/?letter=x" title="Letter X">X</a>
+      <a href="/?letter=y" title="Letter Y">Y</a>
+      <a href="/?letter=z" title="Letter Z">Z</a>
+    </div>
+  </nav>
+</div>

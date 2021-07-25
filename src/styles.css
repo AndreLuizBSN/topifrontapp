@@ -1,0 +1,89 @@
+/*@import "../node_modules/bootstrap/dist/css/bootstrap.css";*/
+/* Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+* {
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #a5a5a5;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0,0,0,.5);
+}
+
+footer p {
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+  font-size: 15px;
+}
+
+body {
+  margin: 0;
+  background: #171717;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+h1, h2 {
+  font-weight: lighter;
+}
+
+p {
+  font-size: 14px;
+}
+
+/* Hyperlink */
+
+a {
+  cursor: pointer;
+  color: #525558;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+/* Top Bar */
+app-top-bar {
+  display: block;
+  background-color: #171717;
+}
+
+/* Checkout Cart, Shipping Prices */
+
+.invisible{
+  display: none !important;
+}
+
+@media (max-width: 800px) {
+  app-top-bar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 99;
+  }
+  .container {
+    margin-top: 50px;
+  }
+}
