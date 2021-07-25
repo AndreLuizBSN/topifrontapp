@@ -34,7 +34,7 @@
   },
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "node server.js",
     "starthost": "ng serve --host localhost --port 4201 --disable-host-check",
     "build": "ng build",
     "test": "ng test",
