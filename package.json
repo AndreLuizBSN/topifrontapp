@@ -18,6 +18,7 @@
     "angular-in-memory-web-api": "0.8.0",
     "bootstrap": "^4.4.1",
     "core-js": "2.6.10",
+    "express": "^4.17.1",
     "jasmine-core": "2.99.1",
     "jasmine-marbles": "0.6.0",
     "jquery": "^3.5.1",
