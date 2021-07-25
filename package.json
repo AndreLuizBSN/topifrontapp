@@ -33,7 +33,7 @@
   },
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --port 9999",
+    "start": "ng serve",
     "starthost": "ng serve --host localhost --port 4201 --disable-host-check",
     "build": "ng build",
     "test": "ng test",
